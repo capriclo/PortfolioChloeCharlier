@@ -489,6 +489,10 @@ p {
     padding-left: 15px;
 }
 
+.fa, .fas {
+    font-weight: 900;
+}
+
 @media (min-width: 768px) {
     .col-md-12 {
         -ms-flex: 0 0 100%;
