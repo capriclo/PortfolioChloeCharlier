@@ -89,7 +89,7 @@ nav ul li a:focus {
     background:url("../img/bck.jpg");
      background-size: cover;
     width: 100%;
-    height: 650px;
+    height: 550px;
     /*filter: blur(3px);*/
     background-repeat: no-repeat;
     text-align: center!important;
@@ -97,7 +97,7 @@ nav ul li a:focus {
 }
 
 #introduction_info{
-    margin-top: 200px;
+    margin-top: 150px;
     height: 200px;
     width: 400px;
     background: #fff;
