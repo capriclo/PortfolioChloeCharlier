@@ -23,10 +23,36 @@ $.fn.typewriter = function (opt) {
 }
 
 
+$.fn.typewriter = function (opt) {
+    var typeone = function (self, text, content) {
+        if (text.length > 0) {
+            var next = text.match(/(\s*(<[^>]*>)?)*(&.*?;|.?)/)[0];
+            text = text.substr(next.length);
+            $(self).html(content + next);
+            setTimeout(function () {
+                typeone(self, text, content + next);
+            }, opt['delay']);
+        }
+    }
+    this.each(function () {
+        opt = opt || {
+         };
+
+        if($(this).width() > 0 && $(this).height() > 0){
+            $(this).height($(this).height());
+            $(this).width($(this).width());
+            typeone(this, $(this).html(), '');
+        }
+
+    });
+}
+
 function animations(){
 	$(".typewriter").typewriter();
+
+
     $(".percentage").each(function () {
-        var width = $(this).attr("percentage");
+        var width = $(this).attr("data-percent");
         console.log($(this).width()+" "+$(this).height());
 		if($(this).height() > 0){
             console.log(width);
@@ -45,6 +71,7 @@ function animations(){
 $(document).ready( function() {
    
 	animations();
+   // move();
 
 	//Langues
 	$( ".english" ).click(function() {
@@ -63,7 +90,16 @@ $(document).ready( function() {
 
 
 })
-	
-	
+
+window.addEventListener('resize', function(event) {
+
+    document.getElementsByClassName("bar-inner").height = 0;
+    clearTimeout(window.resizedFinished);
+    window.resizedFinished = setTimeout(function(){
+        console.log('Resized finished.');
+        location.reload();
+    }, 250);
+   
+}, true);
 
 	

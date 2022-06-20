@@ -33,6 +33,11 @@ html, body {
 a:hover{
     color:#ff7c7c;
 }
+
+a {
+    text-decoration: none;
+}
+
 /* Header */
 header {
     position: fixed;
@@ -325,14 +330,11 @@ p{
 }
 
 #CV {
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 20px 20px 10px 20px;
+    max-height: 50%;
     color: #333;
-    background-color: #fff;
-    border-radius: 2px;
-    border-top: 5px solid #fd6262ce;
-    -webkit-box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
-    box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+   
 }
 
 .cv-screen {
@@ -343,6 +345,39 @@ p{
     border-radius: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
+    background-color: #fff;
+    border-radius: 2px;
+    border-top: 5px solid #fd6262ce;
+    -webkit-box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+    box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+}
+
+.download-cv {
+  margin:  3% 0% 0% 0%;
+}
+
+#cv-btn {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    line-height: 1;
+    -webkit-border-radius: 3px;
+    border-radius: 3px !important;
+    border: none;
+    fill: #fff;
+    text-align: center;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    font-size: 15px;
+    padding: 12px 24px;
+    color: #FFF !important;
+    background-color: #fd6262ce!important;
+    background: #fd6262ce !important;
+    text-shadow: none;
+    width: auto;
 }
 
 #skills-charts {
@@ -383,7 +418,7 @@ p{
     position: relative;
     height: 100%;
     width: 90%;
-    background-color: #f05f40;
+    background-color: #fd6262ce;
     border-radius: 2px;
 }
 
@@ -396,16 +431,32 @@ p{
     font-weight: 700;
 }
 
+.bar-85 {
+    width: 85%;
+}
+
 .bar-75 {
     width: 75%;
+}
+
+.bar-65 {
+    width: 65%;
 }
 
 .bar-60 {
     width: 60%;
 }
 
+.bar-55 {
+    width: 55%;
+}
+
 .bar-50 {
     width: 50%;
+}
+
+.bar-40 {
+    width: 40%;
 }
 
 .bar-30 {
@@ -414,6 +465,10 @@ p{
 
 .bar-20 {
     width: 20%;
+}
+
+.bar-15 {
+    width: 15%;
 }
 
 .progress {
