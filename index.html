@@ -62,7 +62,6 @@
 			</nav>
 		</div>
     </header>
-    <div id="container">
 	<!-- Français -->
 		<!-- Debut des infos  -->
 		<section class="block-introduction">
@@ -105,7 +104,7 @@
 		<!-- Fin des infos -->
 
 		<!-- Debut des barres de compétences -->
-			<section id="comp" class=" wow lg_francais " data-wow-duration="2s" data-wow-delay="0s">
+			<section id="comp" class=" wow lg_francais" data-wow-duration="2s" data-wow-delay="0s">
 				<div class="col-md12 text-center">
 					<div class="light-ribbon ribbon-left"></div>
 					<h2 class="section-title">Mes Compétences</h2>
@@ -124,7 +123,7 @@
 						</div>
 						<div class="download-cv">
 							<div id="cv-btn">
-								<a class="btn" href="rsc/pdf/CV_Charlier_Chloe.pdf" download="CV_Charlier_Chloe">Télécharger CV</a>
+								<a class="btn" href="rsc/pdf/CV_Charlier_Chloe.pdf" target="_blank" download="CV_Charlier_Chloe">Télécharger CV</a>
 							</div>
 						</div>
 					</div>
@@ -172,109 +171,235 @@
 					</div>
 				</div>
 			</section>
-        </div>
         <!-- Fin des barres de compétences -->
 
-
         <!-- Debut de la scolarité -->
-        <div class="block-info sco wow fadeIn lg_francais" id="sco" data-wow-duration="2s" data-wow-delay="0s">
-        	<div class="block-content">
-        		<div class="title">
-                	<h2 class="title">Mes formations</h2>
-            	</div>
-            	<table>
-            	    <tr>
-            	        <th class="sco-icon">
-            	            <i class="icon-graduation-cap"></i>
-            	        </th>
-            	        <th>
-            	            <div class="info-sco">
-            	                <h4>Bachelier en informatique et systèmes </h4>
-            	                <h6><i class="icon-calendar"></i>2016 - Actuel | Haute école en Hainaut</h6>
-            	            </div>
-            	        </th>
-            	    </tr>
-            	    <tr>
-            	        <th class="sco-icon">
-            	            <i class="icon-graduation-cap"></i>
-            	        </th>
-            	        <th>
-            	            <div class="info-sco">
-            	                <h4>Enseignement secondaire général</h4>
-            	                <h6><i class="icon-calendar"></i>2009 - 2016 | Athénée Royal René Magritte de Lessines</h6>
-            	            </div>
-            	        </th>
-            	    </tr>
-            	</table>
-        	</div>
-        </div>
+		<section id="sco" class="lg_francais">
+			<div class="col-md-12 text-center">
+				<div class="dark-ribbon ribbon-left"></div>
+				<h2 class="section-title">Mes Formations</h2>
+				<div class="dark-ribbon ribbon-right"></div>
+			</div>
+			<ul class="timeline">
+				<li>
+					<div class="tl-circ tl-circ-current"></div>
+					<div class="timeline-panel">
+						<p class="font-weight-bold">
+							<span class="fas fa-user-graduate fa-space-right"></span>
+							<a class="link black-link" target="_blank" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Formation Responsive Web Design</a>
+							-
+							<a class="link black-link" target="_blank" href="https://www.freecodecamp.org/">freeCodeCamp</a>
+						</p>
+						<p>
+							<span class="fas fa-map-marker-alt fa-space-right"></span>
+							Formation par Internet
+						</p>
+						<p>
+							<span class="far fa-calendar-alt fa-space-right"></span>
+							Juin 2022
+						</p>
+						<p>
+							Apprentissage à travers cinq projets pratiques et grâce et des cours mis à disposition des principaux langages du Web (HTML, CSS).
+						</p>
+					</div>
+				</li>
+				<li id="moving-timeline" class="timeline-inverted">
+					<div class="tl-circ"></div>
+					<div class="timeline-panel">
+						<p class="font-weight-bold">
+							<span class="fas fa-user-graduate fa-space-right"></span>
+							<a 
+							class="link black-link"
+							target="_blank" 
+							href="https://www.heh.be/bachelier-informatique"
+							>Bachelier en Informatique et systèmes finalité télécommunication et réseau</a>
+							-
+							<a class="link black-link" href="https://www.heh.be/">HEH </a>
+						</p>
+						<p>
+							<span class="fas fa-map-marker-alt fa-space-right"></span>
+							Mons, Belgique
+						</p>
+						<p>
+							<span class="far fa-calendar-alt fa-space-right"></span>
+							2016 - 2021 
+						</p>
+						<p>
+							Découverte de l'algorithmique et pratique des langages de programmations. Spécialité réseaux informatiques.
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="tl-circ"></div>
+					<div class="timeline-panel">
+						<p class="font-weight-bold">
+							<span class="fas fa-user-graduate fa-space-right"></span>
+							<a class="link black-link" href="https://www.ar-lessines.be/secondaire-enseignement-general/so-14">CESS</a>
+							-
+							<a class="link black-link" href="https://www.armagritte.be/">Athénée Royal René Magritte </a>
+						</p>
+						<p>
+							<span class="fas fa-map-marker-alt fa-space-right"></span>
+							Lessines, Belgique
+						</p>
+						<p>
+							<span class="far fa-calendar-alt fa-space-right"></span>
+							2010 - 2016
+						</p>
+						<p>
+							Enseignement secondaire général spécialisation Science-Math
+						</p>
+					</div>
+				</li>
+			</ul>
+		</section>
         <!-- Fin de la scolarité -->
+		<!-- Portfolio -->
+		<section id="portfolio-section">
+			<div class="col-md-12 text-center">
+				<div class="light-ribbon ribbon-left"></div>
+				<h2 class="section-title">Mes Réalisations</h2>
+				<div class="light-ribbon ribbon-right"></div>
+			</div>
+			<div id="project-gallery"></div>
+			<div class="col-md-6 thumbnail">
+				<div class="thumbnail-frame">
+					<img class="thumbnail-img" src="http://www.loiscuby.fr/images/webagency-thumbnail.png" alt="Impresssion d'écran du projet WebAgency" />
+					<div class="project-description">
+						<p class="text-center font-weight-bold project-description-title">WebAgency</p>
+						<p class="text-center project-description-text">
+							Premier projet sur la formation OpenClassrooms, l'objectif est l'apprentissage et la mise en oeuvre des langages HTML et CSS 
+							tout en respectant un cahier des charges
+						</p>
+						<p class="category-separator text-center">
+							Technologies
+						</p>
+						<p>
+							<span class="tag">HTML</span>
+							<span class="tag">CSS</span>
+						</p>
+						<p class="category-separator text-center">
+							Liens
+						</p>
+						<p>
+							<a class="visit-button" href="https://webagency.loiscuby.fr/">
+								<span class="fas fa-globe-americas fa-space-right"></span>
+								Accéder au site
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 thumbnail">
+				<div class="thumbnail-frame">
+					<img class="thumbnail-img" src="http://www.loiscuby.fr/images/velov-thumbnail.png" alt="Impresssion d'écran du projet Velo" />
+					<div class="project-description">
+						<p class="text-center font-weight-bold project-description-title">Velo'v</p>
+						<p class="text-center project-description-text">
+							Troisième projet sur la formation OpenClassrooms, l'objectif est d'apprendre le Javascript en créant un site permettant 
+							de réserver des vélos. Utilisation de l'API JCDecaux et Google Maps
+						</p>
+						<p class="category-separator text-center">
+							Technologies
+						</p>
+						<p>
+							<span class="tag">HTML</span>
+							<span class="tag">CSS</span>
+							<span class="tag">JavaScript</span>
+							<span class="tag">jQuery</span>
+						</p>
+						<p class="category-separator text-center">
+							Liens
+						</p>
+						<p>
+							<a class="visit-button" href="https://velov.loiscuby.fr/">
+								<span class="fas fa-globe-americas fa-space-right"></span>
+								Accéder au site
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 thumbnail">
+				<div class="thumbnail-frame">
+					<img class="thumbnail-img" src="http://www.loiscuby.fr/images/jeanforteroche-thumbnail.png" alt="Impression d'écran du projet Jean Forteroche">
+					<div class="project-description">
+						<p class="text-center font-weight-bold project-description-title">Jean Forteroche</p>
+						<p class="text-center project-description-text">
+							Quatrième projet sur la formation OpenClassrooms, l'objectif est d'apprendre le PHP sans utiliser de framework et en appliquant 
+							la logique CRUD en créant le blog d'un écrivain.
+						</p>
+						<p class="category-separator text-center">
+							Technologies
+						</p>
+						<p>
+							<span class="tag">HTML</span>
+							<span class="tag">CSS</span>
+							<span class="tag">PHP</span>
+							<span class="tag">Bootstrap</span>
+						</p>
+						<p class="category-separator text-center">
+							Liens
+						</p>
+						<p>
+							<span>
+								<a class="visit-button" href="https://jeanforteroche.loiscuby.fr/">
+									<span class="fas fa-globe-americas fa-space-right"></span>
+									Accéder au site
+								</a>
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 thumbnail">
+				<div class="thumbnail-frame">
+					<img class="thumbnail-img" src="http://www.loiscuby.fr/images/nikoniko-thumbnail.png" alt="Impression d'écran du projet Niko Niko" />
+					<div id="nikoniko" class="project-description">
+						<p class="text-center font-weight-bold project-description-title">Niko Niko</p>
+						<p class="text-center project-description-text">
+							Dernier projet sur la formation OpenClassrooms, l'objectif est de valider toutes les compétences apprises, j'ai choisi 
+							de créer un site qui met en oeuvre la méthode agile Niko Niko.
+						</p>
+						<p class="category-separator mg-b-8 text-center">
+							Technologies
+						</p>
+						<p class="tags-list">
+							<span class="tag">HTML</span>
+							<span class="tag">CSS</span>
+							<span class="tag">PHP</span>
+							<span class="tag">Symfony</span>
+							<span class="tag">JavaScript</span>
+							<span class="tag">jQuery</span>
+							<span class="tag">Bootstrap</span>
+						</p>
+						<p class="category-separator text-center">
+							Liens
+						</p>
+						<p>
+							<span>
+								<a class="visit-button" href="https://nikoniko.loiscuby.fr/">
+									<span class="fas fa-globe-americas fa-space-right"></span>
+									Accéder au site
+								</a>
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div id="link-github" class="col-md-12 text-center">
+				<p>
+					Vous pouvez également télécharger mon CV dans un format plus classique. Pour cela cliquez sur l'icône ci-dessous.
+				</p>
+				<a href="http://www.loiscuby.fr/downloads/cv.pdf">
+					<img id="gitHub-logo" src="http://www.loiscuby.fr/images/pdf.svg" alt="Logo PDF">
+				</a>
+			</div>
+		</section>
+		<!-- Fin du portfolio -->
 
 
-        <!-- Debut des expériences pro  -->
-        <div class="block-info pro wow fadeIn lg_francais" id="pro" data-wow-duration="2s" data-wow-delay="0s">
-        	<div class="block-content">
-            	<div class="title">
-            	    <h2 class="title">Mes expériences professionelles</h2>
-            	</div>
-            	<table>
-            	    <tr>
-            	        <th class="pro-icon">
-            	            <i class="icon-briefcase"></i>
-            	        </th>
-            	        <th>
-            	            <div class="info-pro">
-            	                <h4>Professeur d’informatique</h4>
-            	                <h6><i class="icon-calendar"></i>03 2018 – Actuel | Vacances Vivantes</h6>
-            	            </div>
-            	        </th>
-            	    </tr>
-            	    <tr>
-            	        <th class="pro-icon">
-            	            <i class="icon-briefcase"></i>
-            	        </th>
-            	        <th>
-            	            <div class="info-pro">
-            	                <h4> Animatrice</h4>
-            	                <h6><i class="icon-calendar"></i>11 2014 – Actuel  | Vacances Vivantes </h6>
-            	            </div>
-            	        </th>
-            	    </tr>
-					<tr>
-            	        <th class="pro-icon">
-            	            <i class="icon-briefcase"></i>
-            	        </th>
-            	        <th>
-            	            <div class="info-pro">
-            	                <h4> Travail administratif</h4>
-            	                <h6><i class="icon-calendar"></i>Aout 2015 – Septembre 2015  | Baxalta </h6>
-            	            </div>
-            	        </th>
-            	    </tr>
-            	</table>
-            </div>
-        </div>
-        <!-- Fin des expériences pro -->
-		
       
-		
-        <!-- Debut des sports et loisirs -->
-        <div class="block-info hob wow fadeIn lg_francais" id="hob" data-wow-duration="2s" data-wow-delay="0s">
-        	<div class="block-content">
-            	<div class="title">
-            	    <h2>Sports et loisirs</h2>
-            	</div>
-            	<div class="hob-container">
-            	    <div class="hob-dance">
-            	        <i class="icon-female">Danse</i>
-            	    </div>
-            	    <div class="hob-swim">
-            	        <i class="icon-swimming">Natation</i>
-            	    </div>
-            	</div>
-            </div>
-        </div>
-        <!-- Fin des sports et loisirs -->
 	<!-- Fin du français -->
 	<!-- Anglais -->
 		<!-- Debut des infos -->

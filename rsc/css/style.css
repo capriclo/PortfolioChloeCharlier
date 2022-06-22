@@ -38,6 +38,15 @@ a {
     text-decoration: none;
 }
 
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.scroll-adjust {
+    padding-top: 56px;
+    margin-top: -56px;
+}
+
 /* Header */
 header {
     position: fixed;
@@ -102,7 +111,7 @@ nav ul li a:focus {
 }
 
 #introduction_info{
-    margin-top: 150px;
+    margin-top: 100px;
     width: 400px;
     background: #fff;
     display: inline-block;
@@ -284,6 +293,173 @@ p{
     padding: 0;
 }
 /* Mes formations */
+#sco {
+    background-color: #ddd;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.dark-ribbon {
+    display: inline-block;
+    border: 12px solid #333;
+    border-radius: 2px;
+    width: 40px;
+}
+
+.timeline {
+    list-style: none;
+    position: relative;
+    min-width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 0;
+}
+
+.timeline li {
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 50px;
+}
+
+
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 10px;
+    background-color: #333;
+    left: 50%;
+    margin-left: -10px;
+    -webkit-transform: skew(0deg, -30deg);
+    -ms-transform: skew(0deg, -30deg);
+    transform: skew(0deg, -30deg);
+    -webkit-box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+    box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+}
+
+.black-link {
+    color: #212529;
+}
+
+.timeline li:before, .timeline li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline li .tl-circ {
+    position: absolute;
+    top: 26px;
+    left: 50%;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: -16px;
+    border: 3px solid #fff;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    z-index: 99;
+    -webkit-box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+    box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+}
+
+.timeline li .timeline-panel {
+    width: calc(50% - 60px);
+    float: left;
+    background: #fff;
+    border-top: 5px solid #f05f40;
+    padding: 15px;
+    position: relative;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+    box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+}
+
+.timeline li .tl-circ-current {
+    border-color: #f05f40;
+}
+
+.timeline li .timeline-panel:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    content: " ";
+}
+
+.timeline li .timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+
+.timeline li:after {
+    clear: both;
+}
+
+.timeline li .timeline-panel p {
+    margin-bottom: 3px;
+}
+
+.timeline li.timeline-inverted {
+    padding-left: 0;
+    padding-right: 50px;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+    float: right;
+}
+
+.timeline:after {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 10px;
+    background-color: #333;
+    left: 50%;
+    margin-left: 0px;
+    -webkit-transform: skew(0deg, 30deg);
+    -ms-transform: skew(0deg, 30deg);
+    transform: skew(0deg, 30deg);
+    -webkit-box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+    box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+}
+
+.timeline li.timeline-inverted .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+
+.fa-space-right {
+    margin-right: 8px;
+}
+
+.fa-map-marker-alt:before {
+    content: "\f3c5";
+}
+
+.black-link {
+    color: #212529;
+}
+
 .info-sco {
     text-align: left;
 }
@@ -511,7 +687,7 @@ p{
     cursor: pointer;
     bottom: 1em;
     right: 20px;
-    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     border-radius: 15%;
     -moz-border-radius: 15%;
     -webkit-border-radius: 15%;
@@ -744,9 +920,6 @@ p {
     }
     .timeline li {
         padding-left: 25px;
-    }
-    .timeline li.timeline-inverted {
-        padding-right: 25px;
     }
     .timeline:before {
         left: auto;
