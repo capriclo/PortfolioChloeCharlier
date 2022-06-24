@@ -673,6 +673,25 @@ p{
     position: absolute;
     top: 0;
 }
+/*Portfolio section */
+#portfolio-section {
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#project-gallery {
+    padding: 50px 40px 0 40px;
+    margin: 0;
+}
+
+.thumbnail {
+    margin-bottom: 30px;
+}
+
+/* Fin portfolio section */
+
+
 /* Debut Back To Top */
 .BackToTop {
     display: none;
@@ -702,6 +721,10 @@ p{
     transition: all ease-in 0.2s;
 }
 /* Fin Back To Top */
+
+
+
+
 
 #infoFR {
     color: #fff;
