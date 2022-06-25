@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Charlier Chloe" />
-	<meta name="description" content=" CV de Charlier Chloé. Vous y trouverez toutes les informations sur son parcours scolaire, ses expérience professionelles,...">
+	<meta name="description" content="CV de Charlier Chloé. Vous y trouverez toutes les informations sur son parcours scolaire, ses expériences professionelles,...">
 	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>curriculum vitae</title>
@@ -21,25 +21,32 @@
     <header>
 		<div id="before-header"></div>
 		<div id="header-content">
-			<img class="logo ToTop" src="rsc/img/logo.svg" alt="image de profil">
-			<nav class="nav lg_francais">
-				<ul>
-					<li>
-						<a href="#form">Mes formations</a>
-					</li>
-					<li>
-						<a href="#sco">Mes expériences proffesionelle</a>
-					</li>
-					<li>
-						<a href="#pro">Mes compétences</a>
-					</li>
-					<li>
-						<a href="#comp">Mes loisirs</a>
-					</li>
-					<li>
-						<a href="#" class="english">English</a>
-					</li>
-				</ul>
+			<img id="nav-logo" class="logo ToTop" src="rsc/img/logo.svg" alt="image de profil">
+			<nav id="main-navbar" class="nav lg_francais navbar-expand-lg navbar-expand-md">
+				<button id="navbar_toggler" type="button" aria-controls="navbar_container" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggle-icon">
+						<i class="fas fa-bars fa-1x"></i>
+					</span>
+				</button>
+				<div class="text-right" id="navbar_container">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link red-link" href="#portfolio-section">Mes réalisations</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link red-link" href="#sco">Mes formations</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link red-link" href="#comp">Mes compétences</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link red-link" href="#infoFR">Présentation</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link red-link" href="#" class="english">English</a>
+						</li>
+					</ul>
+				</div>
 			</nav>
 			<nav class="nav lg_anglais">
 				<ul>
@@ -71,6 +78,7 @@
 				<p id="post-title">Développeuse Web Junior</p>
 			</div>
 		</section>
+		<div id="about" class="scroll-adjust"></div>
 		<section id="infoFR" class=" wow lg_francais " data-wow-duration="2s" data-wow-delay="0s">
 			<div class="col-md-12 text-center">
 				<div class="light-ribbon ribbon-left"></div>
@@ -255,13 +263,13 @@
 		</section>
         <!-- Fin de la scolarité -->
 		<!-- Portfolio -->
-		<section id="portfolio-section">
+		<section id="portfolio-section" class="lg_francais">
 			<div class="col-md-12 text-center">
 				<div class="light-ribbon ribbon-left"></div>
 				<h2 class="section-title">Mes Réalisations</h2>
 				<div class="light-ribbon ribbon-right"></div>
 			</div>
-			<div id="project-gallery"></div>
+			<div id="project-gallery row"></div>
 			<div class="col-md-6 thumbnail">
 				<div class="thumbnail-frame">
 					<img class="thumbnail-img" src="http://www.loiscuby.fr/images/webagency-thumbnail.png" alt="Impresssion d'écran du projet WebAgency" />
@@ -603,6 +611,7 @@
     <script src="rsc/js/jquery.min.js"></script>
     <script src="rsc/js/wow.js"></script>
     <script src="rsc/js/script.js" ></script>
+	<script src="rsc/js/addListener.js" ></script>
     <script>
         function OnLoad(){
             new WOW().init();

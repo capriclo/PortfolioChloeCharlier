@@ -43,8 +43,8 @@ a {
 }
 
 .scroll-adjust {
-    padding-top: 56px;
-    margin-top: -56px;
+    padding-top: 64px;
+    margin-top: -64px;
 }
 
 /* Header */
@@ -92,6 +92,48 @@ nav ul li a:active {
 }
 nav ul li a:focus {
     color:#000;
+}
+
+#navbar_toggler {
+    display: none;
+    height: 40px;
+    width: 40px;
+}
+
+#navbar_toggler:focus {
+    outline: none;
+}
+
+#navbar_container {
+    width: 100%;
+}
+
+#navbar_container .navbar-nav {
+    justify-content: flex-end;
+}
+
+#navbar_container.opened {
+    opacity: 1;
+    visibility: visible;
+}
+
+.fa-1x {
+    font-size: 1.5rem;
+  }
+
+.text-right {
+    text-align: right!important;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
 }
 
 .lg_anglais{
@@ -678,6 +720,8 @@ p{
     color: #fff;
     padding-top: 50px;
     padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #project-gallery {
@@ -687,6 +731,66 @@ p{
 
 .thumbnail {
     margin-bottom: 30px;
+}
+
+.thumbnail-frame {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 5px;
+    -webkit-box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+    box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+}
+
+.thumbnail-img {
+    height: 360px;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 50%;
+    object-position: 50%;
+}
+
+.project-description {
+    margin: 5px 0 5px 5px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 360px;
+    width: calc(100% - 10px);
+    background-color: rgba(0,0,0,0.8);
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility 0s, opacity 0.2s linear;
+    -o-transition: visibility 0s, opacity 0.2s linear;
+    transition: visibility 0s, opacity 0.2s linear;
+}
+
+.project-description-title {
+    font-size: 22px;
+}
+
+.project-description-text {
+    font-style: italic;
+    color: #ddd;
+}
+
+.thumbnail-frame:hover .project-description {
+    visibility: visible;
+    opacity: 1;
+}
+
+.category-separator {
+    position: relative;
+    font-size: 15px;
+}
+
+.tag {
+    padding: 5px;
+    background-color: #fd6262ce;
+    border-radius: 5px;
 }
 
 /* Fin portfolio section */
@@ -864,6 +968,12 @@ p {
         max-width: 41.666667%;
     }
 
+    .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
     .col-md-7 {
         -ms-flex: 0 0 58.333333%;
         flex: 0 0 58.333333%;
@@ -913,7 +1023,7 @@ p {
     }
 }
 
-@media all and (max-width: 767px)
+@media all and (max-width: 830px)
 {
     #navbar_toggler {
         display: block;
