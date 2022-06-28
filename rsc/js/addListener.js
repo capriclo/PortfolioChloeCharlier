@@ -9,13 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const introductionSectionElt = document.getElementById('introduction');
     const portfolioLinkElt = document.getElementById('portfolio-link');
 
-    if(window.innerWidth <= 750 && movingTimelineElt !== null) {
+    if(window.innerWidth <= 830 && movingTimelineElt !== null) {
         movingTimelineElt.classList.remove('timeline-inverted');
     }
 
     window.addEventListener('resize', function(e) {
         if(movingTimelineElt !== null) {
-            if(window.innerWidth <= 750) {
+            if(window.innerWidth <= 830) {
                 movingTimelineElt.classList.remove('timeline-inverted');
             } else {
                 movingTimelineElt.classList.add('timeline-inverted');

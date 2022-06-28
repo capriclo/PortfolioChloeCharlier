@@ -35,7 +35,10 @@ a:hover{
 }
 
 a {
+    color: #007bff;
     text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
 }
 
 *, ::after, ::before {
@@ -787,13 +790,62 @@ p{
     font-size: 15px;
 }
 
+.category-separator:before {
+    content: " ";
+    position: absolute;
+    border-bottom: 1px solid #ddd;
+    width: 25%;
+    height: 13px;
+    display: inline;
+    margin-left: calc(-25% - 8px);
+}
+
+.category-separator:after {
+    content: " ";
+    position: absolute;
+    border-bottom: 1px solid #ddd;
+    width: 25%;
+    height: 13px;
+    display: inline;
+    margin-left: 8px;
+}
+
 .tag {
     padding: 5px;
     background-color: #fd6262ce;
     border-radius: 5px;
 }
 
+.visit-button {
+    padding: 10px;
+    background-color: #fd6262ce;
+    border-radius: 3px;
+    color: #fff;
+}
+
+#gitHub-logo {
+    width: 75px;
+}
+
 /* Fin portfolio section */
+
+/* Début footer */
+#contact-section {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 40px 50px 40px;
+}
+
+#contact-title {
+    padding-bottom: 50px;
+}
+
+.footer-icon {
+    color: #aaa;
+    font-size: 30px;
+    margin-right: 10px;
+}
+/* Fin Footer */
 
 
 /* Debut Back To Top */
@@ -954,8 +1006,6 @@ p {
 }
 
 @media (min-width: 768px) {
-   
-
     .col-md-3 {
         -ms-flex: 0 0 25%;
         flex: 0 0 25%;
@@ -1077,6 +1127,12 @@ p {
     }
     #project-gallery {
         padding: 50px 10px 0 10px;
+    }
+    #contact-section {
+        padding: 50px 10px;
+    }
+    #contact-form {
+        padding-bottom: 25px;
     }
 }
 
