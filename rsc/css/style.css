@@ -539,7 +539,7 @@ p{
 }
 
 /* Mes compétences */
-#comp {
+.complg {
     background-color: #333;
     color: #fff;
     padding: 50px;
@@ -879,13 +879,11 @@ p{
 /* Fin Back To Top */
 
 
-
-
-
-#infoFR {
+.infolg {
     color: #fff;
     padding: 50px 0;
 }
+
 
 .row {
     display: -ms-flexbox;
@@ -1012,6 +1010,12 @@ p {
         max-width: 25%;
     }
 
+    .col-md-4 {
+        -ms-flex: 0 0 33.33%;
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+
     .col-md-5 {
         -ms-flex: 0 0 41.666667%;
         flex: 0 0 41.666667%;
@@ -1028,6 +1032,12 @@ p {
         -ms-flex: 0 0 58.333333%;
         flex: 0 0 58.333333%;
         max-width: 58.333333%;
+    }
+
+    .col-md-8 {
+        -ms-flex: 0 0 66.67%;
+        flex: 0 0 66.67%;
+        max-width: 66.67%;
     }
 
     .col-md-9 {
