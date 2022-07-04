@@ -1,3 +1,5 @@
+
+
 $.fn.typewriter = function (opt) {
     var typeone = function (self, text, content) {
         if (text.length > 0) {
@@ -75,7 +77,6 @@ $(document).ready( function() {
 
 	//Langues
 	$( ".english" ).click(function() {
-        console.log("English !");
 		$(".lg_francais").fadeOut().promise().done(function(){
             $(".lg_anglais").fadeIn(1000);
             animations();
